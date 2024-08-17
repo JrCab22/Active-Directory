@@ -3,7 +3,7 @@
 </p>
 
 <h1>On-premises Active Directory Deployed in the Cloud (Azure)</h1>
-This tutorial outlines the implementation of on-premises Active Directory within Azure Virtual Machines.<br />
+In this tutorial we will be learning how depploy Active Directory within Azure Virtual Machines.<br />
 
 
 <h2>Environments and Technologies Used</h2>
@@ -26,3 +26,14 @@ This tutorial outlines the implementation of on-premises Active Directory within
 - Step 4
 
 <h2>Deployment and Configuration Steps</h2>
+
+**Step 1: Setting up Resources in Microsoft Azure Portal**
+  - Create 2 Virtual machines for domain controller (Windows server 2022) and the Client (Windows 10): The client will be under the same Resource Group and vnet as the Domain controller.
+  - Set the Domain controller NIC's IP Address to be static:
+    Go to Network settings -> Select the NIC of domain controller (starts in dc in this case) -> ip configurations -> ipconfig1 -> select static -> Save
+
+![image](https://github.com/user-attachments/assets/5402d94a-5fc4-45d5-8153-29a4af099411)
+
+
+**Step 2: Test conenctivity between the client and Domain Controller**
+ - 
