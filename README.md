@@ -3,7 +3,7 @@
 </p>
 
 <h1>On-premises Active Directory Deployed in the Cloud (Azure)</h1>
-In this tutorial we will be learning how depploy Active Directory within Azure Virtual Machines.<br />
+In this tutorial we will be learning how deploy and configure Active Directory within Azure Virtual Machines.<br />
 
 
 <h2>Environments and Technologies Used</h2>
@@ -53,5 +53,24 @@ In this tutorial we will be learning how depploy Active Directory within Azure V
 
 ![image](https://github.com/user-attachments/assets/8ae811e7-56e3-49ca-b8c5-ee3933066aa2)
 
-    
+**Step 3: Install Active Directory**
+ - In rhw server manager in DC-1: Go to Add Roles and features --> Server roles -> Active Directory Domain Services --> Add features --> Install
+   
+   ![image](https://github.com/user-attachments/assets/539e7f16-8821-4dea-b4d5-841ed4e80f83)
+
+ - Promote as a Domain controller: Setup a new forest as mydomain.com (We'll call ours corp.AD-Root.com)
+   
+![image](https://github.com/user-attachments/assets/b4ca04d9-f7f0-4702-a942-a578e07f4bf8)
+
+![image](https://github.com/user-attachments/assets/a5c395a5-d68a-488d-866d-5ca677731874)
+
+- Click next and set password on Domain controller options. Keep clicking next then install once validatioin finishes.
+
+- Restart DC-1 as use and then log back in
+
+**Step 4: Create an Admin and user account in Active Directory**
+-  Go to active directory users and computers from search box
+-  Create a new Organizational unit (OU) named "ADMINS"
+-  We will create a new admin employee named James King with the same password and username of james_admin
+
   
