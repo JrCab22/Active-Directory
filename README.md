@@ -78,10 +78,36 @@ In this tutorial we will be learning how deploy and configure Active Directory w
 
   
 **Step 5: Join Client-1 to your AD domain (corp.AD-root.com)**
- - From the Azure Portal, set Client-1’s DNS settings to the DC’s Private IP address. Restart Client-01 after changing the DNS settings.
- - Remote into Client-01 as the original local admin (labuser in my case) and join it to the domain (computer will restart)
- - Login to the Domain Controller and verify Client-1 shows up in Active Directory Users and Computers  inside the “Computers” container on the root of the domain
+ - From the Azure Portal, set Client-1’s DNS settings to the DC’s Private IP address: Go to  Network settings --> Select NIC --> DNS settings. Choose custom and enter DC-01's private IP and click save. Restart the VM once updated.
+   
+   ![image](https://github.com/user-attachments/assets/5a399db5-b86b-4761-91c7-e759f25499a4)
+
+ - Remote into Client-01 as the original local admin (labuser in my case) and join it to the domain (computer will restart). Go to System --> about --> Rename this PC (Advanced) --> Change
+
+  ![image](https://github.com/user-attachments/assets/6d57156b-232c-4037-b2bf-4c7d9f52b9cc)
+
+ - Login to the Domain Controller and verify Client-1 shows up in Active Directory Users and Computers (ADUC) inside the “Computers” container on the root of the domain.
+
+   ![image](https://github.com/user-attachments/assets/39d6dbc7-92a3-4bf0-a3d2-b210cdd1a18e)
+
  - Create a new OU named “CLIENTS” and drag Client-1 into there
 
-  **Step 6: Setup Remote Desktop for Non-Admin users**
+  **Step 6: Setup Remote Desktop for Non-Admin users and Creating user Accounts**
+- Log into Client-1 as admin account (james_admin@corp.AD-Root.com) and open system properties
+- Click Remote Desktop settings --> Select users that can remotely access this PC --> Enter Domain users in Check names then hit OK. You can now log into Client-1 as a normal, non-administrative user now!
+  
+![image](https://github.com/user-attachments/assets/64c7a046-7c12-45bb-ad90-6462d9e08fc6)
+
+Next we will try creating user accounts and attempt to login with them
+- Login to DC-1 as james_admin and open PowerShell_ise as an administrator
+- Click new script and paste the contents of this script that will be used to create new user accounts: (https://github.com/joshmadakor1/AD_PS/blob/master/Generate-Names-Create-Users.ps1)
+  
+  ![image](https://github.com/user-attachments/assets/d78eeea6-ff5a-430a-8297-de2355280fd3)
+
+- Run the script and observe the many user accounts being created
+- When finished, open ADUC and observe the accounts in the appropriate OU
+- As a test attempt to log into Client-1 with one of the accounts (take note of the password in the script)
+
+
+Congrats you now kow how to install and Configure Active Directory!
   
