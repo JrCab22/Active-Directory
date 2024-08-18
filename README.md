@@ -83,6 +83,11 @@ In this tutorial we will be learning how deploy and configure Active Directory w
 -  Test the admin account by logging out of DC-1 then logging in again as james_admin@corp.AD-root.com This will serve as our admin account for the rest of this exercise.
 
   
+**Step 5: Join Client-1 to your AD domain (corp.AD-root.com)**
+ - From the Azure Portal, set Client-1’s DNS settings to the DC’s Private IP address. Restart Client-01 after changing the DNS settings.
+ - Remote into Client-01 as the original local admin (labuser in my case) and join it to the domain (computer will restart)
+ - Login to the Domain Controller and verify Client-1 shows up in Active Directory Users and Computers  inside the “Computers” container on the root of the domain
+ - Create a new OU named “CLIENTS” and drag Client-1 into there
 
-
+  **Step 6: Setup Remote Desktop for Non-Admin users**
   
