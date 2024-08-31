@@ -64,8 +64,8 @@ In this tutorial we will be learning how deploy and configure Active Directory w
 
 **Step 4: Create an Admin and user account in Active Directory**
 -  Go to active directory users and computers from search box
--  Create a new organization unit (OU) called "EMPLOYEES". Right click on corp.AD-root.com and select organizational unit.
--  Create another OU named "ADMINS". 
+-  Create a new organization unit (OU) called "_EMPLOYEES". Right click on corp.AD-root.com and select organizational unit.
+-  Create another OU named "_ADMINS". 
   
 ![image](https://github.com/user-attachments/assets/a53cc283-be1b-47c7-a97c-cbcaadf7aba8)
 
@@ -102,11 +102,21 @@ In this tutorial we will be learning how deploy and configure Active Directory w
 Next we will try creating user accounts and attempt to login with them
 - Login to DC-1 as james_admin and open PowerShell_ise as an administrator
 - Click new script and paste the contents of this script that will be used to create new user accounts: (https://github.com/joshmadakor1/AD_PS/blob/master/Generate-Names-Create-Users.ps1)
-  
-  ![image](https://github.com/user-attachments/assets/d78eeea6-ff5a-430a-8297-de2355280fd3)
 
+  ![image](https://github.com/user-attachments/assets/d78eeea6-ff5a-430a-8297-de2355280fd3)
+  
 - Run the script and observe the many user accounts being created
+  
+  ![image](https://github.com/user-attachments/assets/047d54a9-176d-44ca-9c42-d397cafb368c)
+
+**NOTE: If the script is not working try enabling RSAT Active Directory Domain Services and Lightweight Service tools in optional features**
+
+![image](https://github.com/user-attachments/assets/abf5a052-7028-4b37-9e2c-22a61a0ce21e)
+
 - When finished, open ADUC and observe the accounts in the appropriate OU
+
+  ![image](https://github.com/user-attachments/assets/8faeb906-b683-40e3-93b0-41d4699fd073)
+
 - As a test attempt to log into Client-1 with one of the accounts (take note of the password in the script)
 
 
