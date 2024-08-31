@@ -58,7 +58,7 @@ In this tutorial we will be learning how deploy and configure Active Directory w
 
 ![image](https://github.com/user-attachments/assets/a5c395a5-d68a-488d-866d-5ca677731874)
 
-- Click next and set password on Domain controller options. Keep clicking next then install once validatioin finishes.
+- Click next and set password on Domain controller options. Keep clicking next then install once validation finishes.
 
 - Restart DC-1 as use and then log back in as user: username@corp.AD-root.com
 
