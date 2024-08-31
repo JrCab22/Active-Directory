@@ -121,6 +121,8 @@ Next we will try creating user accounts and attempt to login with them
 
 ![image](https://github.com/user-attachments/assets/9a760c30-e42a-44b5-b4a4-95f758c38161)
 
+![image](https://github.com/user-attachments/assets/c8f80bbc-a259-46db-b192-f0d5ad0dd34a)
+
 
 Congrats you now kow how to install and Configure Active Directory!
   
