@@ -119,6 +119,8 @@ Next we will try creating user accounts and attempt to login with them
 
 - As a test attempt to log into Client-1 with one of the accounts (take note of the password in the script)
 
+![image](https://github.com/user-attachments/assets/9a760c30-e42a-44b5-b4a4-95f758c38161)
+
 
 Congrats you now kow how to install and Configure Active Directory!
   
