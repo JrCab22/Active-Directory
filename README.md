@@ -64,7 +64,8 @@ In this tutorial we will be learning how deploy and configure Active Directory w
 
 **Step 4: Create an Admin and user account in Active Directory**
 -  Go to active directory users and computers from search box
--  Create a new Organizational unit (OU) named "ADMINS". Right click on corp.AD-root.com and select organizational unit.
+-  Create a new organization unit (OU) called "EMPLOYEES". Right click on corp.AD-root.com and select organizational unit.
+-  Create another OU named "ADMINS". 
   
 ![image](https://github.com/user-attachments/assets/a53cc283-be1b-47c7-a97c-cbcaadf7aba8)
 
