@@ -83,7 +83,8 @@ In this tutorial we will be learning how deploy and configure Active Directory w
    
    ![image](https://github.com/user-attachments/assets/5a399db5-b86b-4761-91c7-e759f25499a4)
 
- - Remote into Client-01 as the original local admin (labuser in my case) and join it to the domain (computer will restart). Go to System --> about --> Rename this PC (Advanced) --> Change
+ - Remote into Client-01 as the original local admin (labuser in my case) and join it to the domain (computer will restart).
+ -  Go to System --> about --> Rename this PC (Advanced) --> Change
 
   ![image](https://github.com/user-attachments/assets/6d57156b-232c-4037-b2bf-4c7d9f52b9cc)
 
