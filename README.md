@@ -48,7 +48,7 @@ In this tutorial we will be learning how deploy and configure Active Directory w
 ![image](https://github.com/user-attachments/assets/8ae811e7-56e3-49ca-b8c5-ee3933066aa2)
 
 **Step 3: Install Active Directory**
- - In rhw server manager in DC-1: Go to Add Roles and features --> Server roles -> Active Directory Domain Services --> Add features --> Install
+ - In the server manager in DC-1: Go to Add Roles and features --> Server roles -> Active Directory Domain Services --> Add features --> Install
    
    ![image](https://github.com/user-attachments/assets/539e7f16-8821-4dea-b4d5-841ed4e80f83)
 
@@ -79,7 +79,7 @@ In this tutorial we will be learning how deploy and configure Active Directory w
 
   
 **Step 5: Join Client-1 to your AD domain (corp.AD-root.com)**
- - From the Azure Portal, set Client-1’s DNS settings to the DC’s Private IP address: Go to  Network settings --> Select NIC --> DNS settings. Choose custom and enter DC-01's private IP and click save. Restart the VM once updated.
+ - From the Azure Portal, set Client-1’s DNS settings to the DC-1’s Private IP address: Go to  Network settings --> Select NIC --> DNS settings. Choose custom and enter DC-01's private IP and click save. Restart the VM once updated.
    
    ![image](https://github.com/user-attachments/assets/5a399db5-b86b-4761-91c7-e759f25499a4)
 
