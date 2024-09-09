@@ -63,7 +63,7 @@ In this tutorial we will be learning how deploy and configure Active Directory w
 - Restart DC-1 as use and then log back in as user: username@corp.AD-root.com
 
 **Step 4: Create an Admin and user account in Active Directory**
--  Go to active directory users and computers from search box
+-  Type active directory users and computers in the search bar
 -  Create a new organization unit (OU) called "_EMPLOYEES". Right click on corp.AD-root.com and select organizational unit.
 -  Create another OU named "_ADMINS". 
   
