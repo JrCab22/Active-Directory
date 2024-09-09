@@ -23,7 +23,7 @@ In this tutorial we will be learning how deploy and configure Active Directory w
 
 **Step 1: Setting up Resources in Microsoft Azure Portal**
   - Create 2 Virtual machines for domain controller (Windows server 2022) and the Client (Windows 10): The client (Client 01) will be under the same Resource Group and vnet as the Domain controller.
-  - Set the Domain controller NIC's IP Address to be static:
+  - Set the Domain controller NIC's IP Address to be static prior to creating Client 01:
     Go to Network settings -> Select the NIC of domain controller (starts in dc in this case) -> ip configurations -> ipconfig1 -> select static -> Save
 
 ![image](https://github.com/user-attachments/assets/5402d94a-5fc4-45d5-8153-29a4af099411)
