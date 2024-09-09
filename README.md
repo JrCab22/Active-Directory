@@ -52,7 +52,7 @@ In this tutorial we will be learning how deploy and configure Active Directory w
    
    ![image](https://github.com/user-attachments/assets/539e7f16-8821-4dea-b4d5-841ed4e80f83)
 
- - Promote as a Domain controller: Setup a new forest as mydomain.com (We'll call ours corp.AD-Root.com)
+ - Promote as a Domain controller: Setup a new forest (We'll call ours corp.AD-Root.com)
    
 ![image](https://github.com/user-attachments/assets/b4ca04d9-f7f0-4702-a942-a578e07f4bf8)
 
