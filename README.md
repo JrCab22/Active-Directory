@@ -38,7 +38,7 @@ In this tutorial we will be learning how deploy and configure Active Directory w
   ![image](https://github.com/user-attachments/assets/1b428f77-4f40-4125-9dd1-a5738cbaa921)
 
 
-  - Log in to DC- 01 and enable all ICMPv4 protocol on the local windows firewall. Now the ping works just fine!
+  - Log in to DC- 01 and enable all ICMPv4 Core Networking protocol on the local windows firewall. Now the ping works just fine!
   - Go to Windows Defender Firewall --> Advanced -> Click protocol to filter -> Right click and enable on all ICMPv4 Core Networking Diagnostics rules
 
     ![image](https://github.com/user-attachments/assets/718f8372-015c-41d6-9ed8-bd2590d91fc7)
