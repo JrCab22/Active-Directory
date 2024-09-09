@@ -95,7 +95,7 @@ In this tutorial we will be learning how deploy and configure Active Directory w
  - Create a new OU named “CLIENTS” and drag Client-1 into there
 
   **Step 6: Setup Remote Desktop for Non-Admin users and Creating user Accounts**
-- Log into Client-1 as admin account (james_admin@corp.AD-Root.com) and open system properties
+- Log into Client-1 as admin account (james_admin@corp.AD-Root.com) and open Settings
 - Click Remote Desktop settings --> Select users that can remotely access this PC --> Enter Domain users in Check names then hit OK. You can now log into Client-1 as a normal, non-administrative user now!
   
 ![image](https://github.com/user-attachments/assets/64c7a046-7c12-45bb-ad90-6462d9e08fc6)
