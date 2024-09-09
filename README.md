@@ -71,7 +71,7 @@ In this tutorial we will be learning how deploy and configure Active Directory w
 
   
 -  We will create a new admin employee named James King with the username of james_admin and set their password.
--  Add james_admin to the "Domain Admins" Security group: Right clock on the user --> Properties --> Click add on member of --> Type Domain admins and click Check names --> Click ok then apply then ok. 
+-  Add James King to the "Domain Admins" Security group: Right clock on the user --> Properties --> Click add on member of --> Type Domain admins and click Check names --> Click ok then apply then ok. 
 
   ![image](https://github.com/user-attachments/assets/a9ed6515-22af-4063-8f02-2c13cb1e483c)
 
